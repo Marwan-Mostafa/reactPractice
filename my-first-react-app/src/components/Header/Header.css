@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-header{
+    box-shadow: 0 4px 10px rgba(51, 53, 53, 0.2);
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    font-size: 45px;
+    color: white;
+    background-color: #097db79c;
+}
