@@ -1,11 +1,9 @@
-import './Post.css'
-
-export default function RenderPost(){
-    return(
-        <div className='container'>
-            <h1 className='titlePost'>This is post Title</h1>
-            <span></span>
-            <p className='text'>This is post body</p>
-        </div>
+export default function Post({ name, price, stock }) {
+    return (
+        <>
+            <h1>{name}</h1>
+            <h1>{price}$</h1>
+            <h1>{stock}</h1>
+        </>
     )
 }

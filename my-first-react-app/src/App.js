@@ -1,29 +1,12 @@
 import './App.css';
-import RenderHeader from './components/Header/Header';
-import RenderPost from './components/Post/Post'
-import RenderSideBar from './components/SideBar/SideBar';
-
+import Post from './components/Post/Post'
 
 function App() {
   return (
     <div className="App">
-      <RenderHeader/>
-      <main className='content'>
-        <section className='posts'>
-          <RenderPost/>
-          <RenderPost/>
-          <RenderPost/>
-          <RenderPost/>
-          <RenderPost/>
-          <RenderPost/>
-        </section>
-
-        <RenderSideBar/>
-      </main>
+      <Post name="Post one" price={3000} stock="true"/>
     </div>
   );
 }
-
-
 
 export default App;
