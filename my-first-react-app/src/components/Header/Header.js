@@ -2,8 +2,8 @@ import "./Header.css"
 
 export default function RenderHeader() {
     return (
-        <div className={"header"}>
+        <header className="header">
             <h1>Tarmeez Academy</h1>
-        </div>
+        </header>
     )
 }

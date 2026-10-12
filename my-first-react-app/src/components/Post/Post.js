@@ -1,9 +1,19 @@
-export default function Post({ name, price, stock }) {
+import './Post.css';
+
+export default function RenderPost({ title, body }) {
     return (
-        <>
-            <h1>{name}</h1>
-            <h1>{price}$</h1>
-            <h1>{stock}</h1>
-        </>
-    )
+        <article className="post-card">
+
+            <h2 className="post-title">
+                {title}
+            </h2>
+
+            <hr />
+
+            <p className="post-body">
+                {body}
+            </p>
+
+        </article>
+    );
 }
