@@ -6,37 +6,24 @@ import RenderSideBar from './components/SideBar/SideBar';
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
 
       <RenderHeader />
 
-      <main className="content">
-
-        <section className="posts">
-
-          <RenderPost
-            title="أكاديمية ترميز"
-            body="أكاديمية مخصصة لتعليم البرمجة بمختلف مجالاتها"
-          />
-
-          <RenderPost
-            title="hello world"
-            body="This is hello world article"
-          />
-
-          <RenderPost
-            title="post 3"
-            body="This is the body of post 3"
-          />
-
-        </section>
-
-        <aside className="sidebar">
-          <RenderSideBar />
-        </aside>
-
-      </main>
-
+      <div style={{ display: "flex", justifyContent: "center"}}>
+        <div style={{ width: "60%", display: "flex", justifyContent: "center" }}>
+          <div style={{ width: "70%" }}>
+            <RenderPost postName="أكادميه ترميز" body="أكادميه مخصصه لتعليم البرمجه"/>
+            <RenderPost />
+            <RenderPost />
+            <RenderPost />
+            <RenderPost />
+          </div>
+          <div style={{ width: "30%", marginTop: "25px" }}>
+            <RenderSideBar />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
