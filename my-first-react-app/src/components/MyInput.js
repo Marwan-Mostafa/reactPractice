@@ -10,7 +10,7 @@ export default function MyInput() {
     return (
         <div>
             <label>Your Name: </label>
-            <input value={myInputValue} onChange={hande} />
+            <input value={myInputValue} />
         </div>
     )
 }
