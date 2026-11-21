@@ -5,11 +5,23 @@ import CourseCard from "./components/CourseCard"
 function App(){
   return(
     <>
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
+      <CourseCard 
+        title="HTML"
+        lessons = {60}
+        price = {300}
+      />
+
+      <CourseCard 
+        title="CSS"
+        lessons = {80}
+        price = {100}
+      />
+
+      <CourseCard 
+        title="JAVASCRIPT"
+        lessons = {70}
+        price = {3000}
+      />
     </>
   )
 }

@@ -1,19 +1,10 @@
-function CourseCard(){
-
-    const course = {
-      title: "Elzero",
-      lessons: 60,
-      duration: 10,
-      price: 100,
-  }
+function CourseCard(courseDetails){
   
   return(
     <div>
-      <p>Course Name is: {course.title}</p>
-      <p>Course Lesson Number is: {course.lessons}</p>
-      <p>Course Total Duration is: {course.duration}</p>
-      <p>Course Total Duration in minutes is: {course.duration * course.lessons}</p>
-      <p>Course Price is: {course.price}</p>
+      <p>Course Name is: {courseDetails.title}</p>
+      <p>Course Lesson Number is: {courseDetails.lessons}</p>
+      <p>Course Total Duration is: {courseDetails.price}</p>
     </div>
   )
 }
