@@ -1,0 +1,22 @@
+.site-footer {
+    padding: 32px 24px;
+    color: #cbd5e1;
+    background-color: #0f172a;
+    text-align: center;
+}
+
+.site-footer strong {
+    color: #f8fafc;
+    font-size: 20px;
+}
+
+.site-footer p {
+    margin: 12px 0 20px;
+    color: #94a3b8;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.site-footer small {
+    color: #94a3b8;
+}
