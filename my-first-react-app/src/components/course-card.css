@@ -1,40 +1,49 @@
+
 .course-card {
     min-width: 0;
-    padding: 28px;
-    background-color: white;
+    padding: 24px;
+    background-color: #ffffff;
+
     border: 1px solid #e2e8f0;
-    border-top: 4px solid #2563eb;
-    border-radius: 16px;
+    border-top: 3px solid #2563eb;
+    border-radius: 14px;
+
     box-shadow: 0 8px 24px rgb(15 23 42 / 5%);
-    transition: box-shadow 0.2s;
+
+    transition: box-shadow 0.2s ease;
 }
 
 .course-card:hover {
     box-shadow: 0 12px 32px rgb(15 23 42 / 12%);
 }
 
-.course-card p {
-    margin: 0;
-    line-height: 1.6;
-    overflow-wrap: anywhere;
-}
+.course-card h2 {
+    margin: 4px 0 22px;
 
-.course-card p:first-child {
-    margin-bottom: 20px;
     color: #0f172a;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
 }
 
-.course-card p:nth-child(2) {
+
+.course-lessons {
+    margin: 0;
     padding-bottom: 20px;
+
     color: #64748b;
+    font-size: 16px;
+    line-height: 1.5;
+
     border-bottom: 1px solid #e2e8f0;
 }
 
-.course-card p:last-child {
+.course-price {
+    margin: 0;
     padding-top: 20px;
+
     color: #1d4ed8;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
+    line-height: 1.5;
 }

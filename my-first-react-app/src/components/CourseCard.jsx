@@ -1,11 +1,13 @@
-import "./course-card.css"
+import "./course-card.css";
 
-function CourseCard(courseDetails) {
+function CourseCard({ title, lessons, price }) {
   return (
     <div className="course-card">
-      <p>Course Name is: {courseDetails.title}</p>
-      <p>Course Lesson Number is: {courseDetails.lessons}</p>
-      <p>Course Total Duration is: {courseDetails.price}</p>
+      <h2>Course Name Is: {title}</h2>
+
+      <p className="course-lessons">Course Lessons Number Is: {lessons}</p>
+
+      <p className="course-price">Price Is: {price}</p>
     </div>
   );
 }

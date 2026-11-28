@@ -1,5 +1,35 @@
-.courses{
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.courses {
+    width: min(100% - 64px, 1150px);
+    margin: 16px auto 36px;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100%, 320px), 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 24px;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .courses {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .courses {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
