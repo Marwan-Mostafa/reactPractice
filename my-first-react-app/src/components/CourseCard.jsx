@@ -1,6 +1,6 @@
 import "./course-card.css";
 
-function CourseCard({ title, lessons, price }) {
+function CourseCard({ title = "Unknow", lessons = 0, price = 0 }) {
   return (
     <div className="course-card">
       <h2>Course Name Is: {title}</h2>
